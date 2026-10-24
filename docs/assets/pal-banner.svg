@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img" aria-labelledby="title desc">
+  <title id="title">PAL banner</title>
+  <desc id="desc">A banner for PAL showing voice input, meaning extraction, human approval, and an action result.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#07111f"/>
+      <stop offset="55%" stop-color="#0f1d31"/>
+      <stop offset="100%" stop-color="#101826"/>
+    </linearGradient>
+    <linearGradient id="primary" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="52%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b1727"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="420" fill="url(#bg)"/>
+  <circle cx="1195" cy="95" r="160" fill="#22d3ee" opacity="0.09"/>
+  <circle cx="1285" cy="310" r="180" fill="#34d399" opacity="0.08"/>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="70" width="440" height="270" rx="26" fill="url(#panel)" stroke="rgba(148,163,184,0.35)"/>
+
+    <g transform="translate(92,110)">
+      <rect x="0" y="0" width="130" height="58" rx="14" fill="#091827" stroke="#38bdf8"/>
+      <text x="18" y="35" font-size="17" font-family="Segoe UI, sans-serif" fill="#dbeafe">Voice</text>
+
+      <path d="M145 29H205" stroke="url(#primary)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M205 29l12-12M205 29l12 12" stroke="url(#primary)" stroke-width="5" stroke-linecap="round"/>
+
+      <rect x="220" y="0" width="130" height="58" rx="14" fill="#091827" stroke="#34d399"/>
+      <text x="238" y="35" font-size="17" font-family="Segoe UI, sans-serif" fill="#dcfce7">Meaning</text>
+
+      <path d="M365 29H420" stroke="url(#primary)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M420 29l12-12M420 29l12 12" stroke="url(#primary)" stroke-width="5" stroke-linecap="round"/>
+
+      <rect x="435" y="0" width="138" height="58" rx="14" fill="#091827" stroke="#fbbf24"/>
+      <text x="453" y="35" font-size="17" font-family="Segoe UI, sans-serif" fill="#fef3c7">Approval</text>
+    </g>
+
+    <g transform="translate(82,210)">
+      <rect x="0" y="0" width="182" height="82" rx="18" fill="#0b1220" stroke="rgba(148,163,184,0.35)"/>
+      <text x="20" y="30" font-size="14" font-family="Segoe UI, sans-serif" fill="#cbd5e1">“Please send</text>
+      <text x="20" y="52" font-size="14" font-family="Segoe UI, sans-serif" fill="#cbd5e1">₦40,000 to Ada”</text>
+
+      <rect x="230" y="6" width="176" height="70" rx="16" fill="#0b1220" stroke="rgba(52,211,153,0.55)"/>
+      <text x="255" y="34" font-size="13" font-family="Segoe UI, sans-serif" fill="#a7f3d0">Recipient: Ada</text>
+      <text x="255" y="53" font-size="13" font-family="Segoe UI, sans-serif" fill="#a7f3d0">Amount: ₦40,000</text>
+
+      <rect x="438" y="0" width="156" height="82" rx="18" fill="#0b1220" stroke="rgba(251,191,36,0.6)"/>
+      <text x="462" y="33" font-size="14" font-weight="700" font-family="Segoe UI, sans-serif" fill="#fef3c7">Approve?</text>
+      <rect x="463" y="46" width="66" height="20" rx="10" fill="#16a34a"/>
+      <text x="482" y="60" font-size="11" font-family="Segoe UI, sans-serif" fill="#dcfce7">YES</text>
+      <rect x="538" y="46" width="44" height="20" rx="10" fill="#ef4444"/>
+      <text x="549" y="60" font-size="11" font-family="Segoe UI, sans-serif" fill="#fee2e2">NO</text>
+    </g>
+  </g>
+
+  <g transform="translate(920,110)">
+    <text x="0" y="0" font-size="56" font-weight="800" font-family="Segoe UI, sans-serif" fill="#f8fafc">PAL</text>
+    <text x="0" y="56" font-size="24" font-family="Segoe UI, sans-serif" fill="#cbd5e1">Meaning-to-Action</text>
+    <text x="0" y="88" font-size="24" font-family="Segoe UI, sans-serif" fill="#cbd5e1">Intelligence</text>
+
+    <g transform="translate(0,120)">
+      <rect x="0" y="0" width="180" height="42" rx="21" fill="#0b1220" stroke="#38bdf8"/>
+      <text x="22" y="28" font-size="17" font-weight="600" font-family="Segoe UI, sans-serif" fill="#7dd3fc">Human approval</text>
+
+      <rect x="206" y="0" width="132" height="42" rx="21" fill="#0b1220" stroke="#34d399"/>
+      <text x="228" y="28" font-size="17" font-weight="600" font-family="Segoe UI, sans-serif" fill="#6ee7b7">Safe by design</text>
+    </g>
+  </g>
+</svg>
