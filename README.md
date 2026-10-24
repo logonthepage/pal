@@ -1,12 +1,24 @@
 # PAL — Meaning-to-Action Intelligence
 
-**The first voice-to-action system for African code-switching that always asks before executing.**
+<img src="docs/assets/pal-banner.svg" alt="PAL banner showing voice input transforming into meaning, policy approval, and action execution" width="100%" />
 
-> 🏆 **Sahara CodeSwitch Africa Challenge Submission** — September 15, 2026  
-> 📊 **Benchmark**: Methodology in `docs/PAL_BENCHMARK.md` — full evaluation run in progress, not yet complete  
-> 🔐 **Safety**: No LLM executes side effects — human approval required
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue)](https://www.typescriptlang.org/)
+[![Sahara](https://img.shields.io/badge/STT-Sahara%20v2.5-green)]()
+[![Safety](https://img.shields.io/badge/Safety-human%20approval%20required-red)]()
+[![Status](https://img.shields.io/badge/Benchmark-methodology%20ready-orange)]()
 
-Built for the [Sahara CodeSwitch Africa Challenge](https://www.intron.io/sahara-v2-5/sahara-codeswitch-africa/).
+**Voice-to-action system for African code-switching that always asks before it acts.**
+
+> Sahara CodeSwitch Africa Challenge submission (September 2026).  
+> No LLM has direct execution authority. Human approval is required for consequential actions.
+
+## About
+
+PAL is a safety-first voice-to-action system for African code-switching. It listens to spoken requests, extracts the meaning and critical fields, checks that the requested action is valid and safe, and then pauses for human approval before anything consequential is executed.
+
+The system is designed around one principle: speech is not action. A model can understand intent, propose a plan and surface the risk, but a real external write or financial action must still be approved by a person.
+
+This makes PAL a strong fit for situations where language is fluid, names and prices are ambiguous, and trust matters more than speed.
 
 ---
 
@@ -49,7 +61,7 @@ Voice (code-switched) → Sahara STT → MeaningState → ActionPlan
 
 ### Model Comparison — current status
 
-No completed benchmark evaluation is published in this repository. The declared comparison is Sahara v2.5, Whisper Large-v3, and AfriSpeech-Whisper. The public report shows the methodology and pending status until measured run artifacts are committed.
+No completed benchmark evaluation is published in this repository. The declared comparison is Sahara v2.5, Whisper Large-v3, and AfriSpeech-Whisper. The public report shows the methodology and pen[...]
 
 **Dataset**: [AfriSwitchCare](https://huggingface.co/datasets/intronhealth/AfriSwitchCare) — Healthcare conversations with code-switching (high-stakes domain)
 
